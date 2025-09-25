@@ -23,4 +23,13 @@ if st.button("Predict Performance"):
     prediction =  max(0, min(100, prediction))
     st.success(f"Predicted Performance Score: {prediction:.2f}/100")
     
+st.sidebar.title("About")
+st.sidebar.info(
+    "This app predicts student performance using a trained ML model. \n\n"
+    "Adjust the sliders and select options, then click 'Predict Performance'. \n\n"
+    "Built with Streamlit, NumPy, and Scikit-learn."
+)
 
+
+st.markdown("---")  # horizontal line
+st.markdown("© 2025 Lincoln Chitswa | For educational purposes only")
